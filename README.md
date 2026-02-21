@@ -1,7 +1,7 @@
 🍎 ArchVision
 Reimagining Architecture Through Augmented Reality
 
-Swift Student Challenge · Apple WWDC Submission Style README
+Swift Student Challenge 
 
 🚀 Overview
 ArchVision is an immersive AR-powered architectural visualization app built using SwiftUI + ARKit + RealityKit.
