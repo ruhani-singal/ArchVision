@@ -1,331 +1,170 @@
-🏗 ArchVision
-Design Before You Build
+🍎 ArchVision
+Reimagining Architecture Through Augmented Reality
 
-ArchVision is a spatial interior design application built using SwiftUI, ARKit, and RealityKit. It enables users to design rooms in real scale, visualize layouts in 2D & 3D, and preview furniture in Augmented Reality before making real-world decisions.
+Swift Student Challenge · Apple WWDC Submission Style README
 
-ArchVision bridges imagination and execution by transforming interior planning into an interactive, intelligent, and immersive experience.
+🚀 Overview
+ArchVision is an immersive AR-powered architectural visualization app built using SwiftUI + ARKit + RealityKit.
 
-✨ Features
-🏠 1. Room Setup System
+It empowers users to design, place, resize, and explore architectural elements in real space — with precision, realism, and intuitive gestures.
 
-Custom room dimensions (Width, Length, Height)
+Think: Figma meets RealityKit. In your living room.
 
-Real-time floor area calculation
+✨ Inspiration
+Architecture students and designers often struggle to visualize spatial concepts before execution. Traditional 2D drawings fail to communicate depth, materials, and scale. With Apple’s AR ecosystem, we saw an opportunity:
 
-Wall color selection
+Use ARKit plane detection.
 
-Flooring presets
+Leverage RealityKit’s PhysicallyBasedMaterial.
 
-Theme-based style configuration
+Integrate SwiftUI for an elegant UI.
 
-🧱 2. Multi-View Design Canvas
-🎥 Perspective (3D) View
+Deliver a seamless Apple-style experience.
 
-Custom 3D projection engine
+Experience Preview
 
-Camera orbit via drag gestures
 
-Dynamic lighting simulation
+<img width="379" height="603" alt="image" src="https://github.com/user-attachments/assets/adbb6d53-78d8-4ce5-ac23-5b770ee8fd4f" />
+<img width="364" height="603" alt="image" src="https://github.com/user-attachments/assets/608f94f6-664d-4744-a6e8-1ff9299adb8e" />
+<img width="367" height="603" alt="image" src="https://github.com/user-attachments/assets/ba28ea80-48ae-434f-b159-28e3effb7639" />
+<img width="348" height="603" alt="image" src="https://github.com/user-attachments/assets/45f8df62-8d25-400f-88c9-80d22c23010e" />
+<img width="350" height="603" alt="image" src="https://github.com/user-attachments/assets/9fa0493e-516b-407d-a276-c64ca76d1aec" />
+<img width="348" height="603" alt="image" src="https://github.com/user-attachments/assets/a2897a7d-a1ff-49d8-857d-7608daf8788d" />
 
-Grid overlay system
 
-Real-time dimension display
+🧠 Core Features
+🏗 Intelligent Object Placement
 
-📐 Top-Down View
+Plane detection using ARKit.
 
-Architectural planning layout
+Grid-based snapping.
 
-Zoom controls
+User-controlled positioning (no blind placement).
 
-Scrollable canvas
+📏 Dynamic Scaling & Resizing
 
-Grid snapping support
+Pinch to resize objects.
 
-🧍 Elevation View
+Real-time scaling with visual feedback.
 
-Wall-based layout visualization
+Maintain proportional integrity.
 
-Height-aware object rendering
+🔍 Zoomable AR Grid
 
-Vertical scaling accuracy
+Interactive zoom controls.
 
-🪑 3. Interactive Furniture Engine
+Precision editing mode.
 
-Categorized furniture catalog
+Smooth camera movement.
 
-Real-world scaled object dimensions
+🪵 Realistic Materials
 
-Drag & drop placement
+Utilizes PhysicallyBasedMaterial().
 
-Object rotation controls
+Wood, marble, and metal textures.
 
-Inspector panel for:
+Roughness & normal maps for depth realism.
 
-Material selection
+🎨 Apple-Level UI
 
-Dimension display
+Clean SwiftUI components.
 
-Price information
+Subtle animations.
 
-Undo stack (up to 20 actions)
+SF Symbols integration.
 
-Auto-arrangement algorithm
+Accessibility-first design.
 
-Budget calculation system
+🛠 Built With
+SwiftUI
 
-💡 4. Smart Design Suggestions
+ARKit
 
-Theme recommendations:
+RealityKit
 
-Modern
+Xcode
 
-Minimalist
+Apple’s Human Interface Guidelines
 
-Scandinavian
+🏛 System Architecture
+User Interaction (SwiftUI)
 
-Industrial
+ARView Container
 
-Bohemian
+Plane Detection (ARKit)
 
-Japandi
+3D Entity Rendering (RealityKit)
 
-Lighting presets:
+Physically Based Materials
 
-Natural
+Modular architecture ensures:
 
-Warm
+Scalability
 
-Cool
+Clean separation of concerns
 
-Dramatic
+Future feature expansion (multi-user, cloud sync)
 
-Studio
+🎯 Problem Statement
+Challenge	Impact
+Lack of real-world visualization	Design misinterpretation
+Limited interaction in traditional CAD	Reduced engagement
+No real-time scale validation	Costly implementation errors
+💡 Our Solution
 
-Color palettes
+ArchVision provides real-scale AR object visualization, interactive design manipulation, and photorealistic rendering—all powered natively within Apple’s ecosystem.
 
-Professional interior design tips
+🌍 Who Benefits?
+Architecture Students
 
-Animated “AI-style” analysis simulation
+Interior Designers
 
-📊 5. Space & Budget Analytics
+Real Estate Developers
 
-Total objects count
+AR Enthusiasts
 
-Floor area calculation
+Educational Institutions
 
-Space utilization percentage
+📈 Future Roadmap
+🌐 Multi-user collaboration via SharePlay
 
-Budget tracking
+☁️ Cloud model sync
 
-Visual utilization progress bar
+🧠 AI-assisted room recommendations
 
-📱 6. Augmented Reality Preview (ARKit)
+🏢 Prebuilt architectural templates
 
-Horizontal & vertical plane detection
+🎭 Advanced material library
 
-Raycasting for accurate placement
+🏆 Why This Fits WWDC
+Leverages Apple’s core technologies: Deep integration of ARKit and RealityKit.
 
-Real-world scale modeling
+Innovation: Moves architectural design from 2D screens to 3D space.
 
-Object rotation in AR
+Clean SwiftUI-first architecture: Modern, declarative, and efficient code.
 
-Snapshot capture to Photos
+Impact: Educational and professional utility.
 
-Coaching overlay guidance
+🧑‍💻 Developer
+Ruhani Singal
+Swift Developer · AR Enthusiast · Hackathon Builder
 
-AR session interruption handling
+“Technology should not just build structures — it should help us experience them.”
 
-Reset & undo functionality
+📦 Installation
+Clone the repository:
 
-🛠 Tech Stack
-Category	Technology
-UI Framework	SwiftUI
-AR Engine	ARKit
-3D Rendering	RealityKit
-State Management	ObservableObject (MVVM)
-Reactive Updates	Combine
-Gesture Handling	SwiftUI Gestures
-3D Math	Custom projection calculations
-Haptics	UIFeedbackGenerator
-Rendering	SwiftUI Canvas
-🧠 Architecture
+Bash
+git clone https://github.com/yourusername/ArchVision.git
+Navigate and Open:
 
-ArchVision follows MVVM (Model-View-ViewModel) architecture.
+Bash
+cd ArchVision
+open ArchVision.xcodeproj
+Requirements:
 
-🔹 Models
-
-FurnitureItem
-
-DesignTheme
-
-MaterialKind
-
-FloorKind
-
-LightPreset
-
-FurnitureCategory
-
-AppScreen
-
-🔹 ViewModels
-
-DesignVM – Core design state management
-
-ARViewModel – AR session handling & placement logic
-
-AppState – Navigation state controller
-
-🔹 Views
-
-Onboarding
-
-Room Setup
-
-Design Canvas (3 modes)
-
-Suggestions
-
-AR Preview
-
-Catalog Sheet
-
-Inspector Panel
-
-Stats View
-
-📦 Imports Used
-import SwiftUI
-import ARKit
-import RealityKit
-import Combine
-
-Why Each Is Used
-
-SwiftUI → UI rendering & state-driven interface
-
-ARKit → World tracking, plane detection, raycasting
-
-RealityKit → 3D models, materials, anchors
-
-Combine → Reactive state updates
-
-🧮 Core Systems Implemented
-
-Custom 3D room projection (without SceneKit)
-
-Real-time Canvas-based rendering
-
-Spatial coordinate transformation
-
-Raycast-based AR object placement
-
-Procedural box mesh generation
-
-Material simulation (roughness & metallic parameters)
-
-Undo stack state management
-
-Zoom scaling matrix calculations
-
-Dynamic lighting gradient simulation
-
-Haptic feedback integration
-
-📊 Key Engineering Highlights
-
-100% SwiftUI-based UI
-
-Fully programmatic AR setup
-
-Custom-built perspective projection math
-
-Real-time grid generation
-
-Scrollable & zoomable architectural canvas
-
-AR snapshot capture functionality
-
-State-driven animated UI transitions
-
-Modular reusable components
-
-Environment-based state injection
-
-🎯 Use Cases
-
-Interior designers
-
-Architecture students
-
-Homeowners planning renovations
-
-Real estate staging
-
-Furniture visualization
-
-AR product previews
-
-Educational spatial tools
-
-🚀 Future Improvements
-
-Physically Based Materials (PBR textures)
-
-Real furniture model imports (USDZ)
-
-LiDAR room scanning
-
-AI-based auto-layout optimization
-
-Multi-user collaboration
-
-Cloud save & share
-
-E-commerce integration
-
-Advanced lighting simulation
-
-Real shadow casting
-
-📱 Requirements
+iPad/iPhone with LiDAR (Recommended)
 
 iOS 16+
 
 Xcode 15+
-
-Swift Playgrounds compatible
-
-Device with ARKit support
-
-Camera permission enabled
-
-Add to Info.plist:
-
-NSCameraUsageDescription
-
-🔐 Permissions Required
-
-Camera access (for AR functionality)
-
-Photo library access (for saving AR snapshots)
-
-🏆 Project Vision
-
-ArchVision transforms interior design from guesswork into a spatially intelligent, immersive, and data-driven experience.
-
-It empowers users to:
-
-Visualize before purchasing
-
-Optimize space usage
-
-Avoid costly mistakes
-
-Experience designs in real-world AR
-
-Design confidently before building
-
-👩‍💻 Author
-
-Built using SwiftUI & ARKit as an advanced spatial design exploration project.
