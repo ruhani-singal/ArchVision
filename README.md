@@ -155,7 +155,7 @@ Swift Developer · AR Enthusiast · Hackathon Builder
 Clone the repository:
 
 Bash
-git clone https://github.com/yourusername/ArchVision.git
+git clone https://github.com/ruhani-singal/ArchVision.git
 Navigate and Open:
 
 Bash
